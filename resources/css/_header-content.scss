@@ -1,0 +1,156 @@
+.head_banner{
+    background-color: $light-blue;
+    p{
+        color: #577F9C;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 15px 0;
+        text-align: center;
+    }
+}
+.head_nav{
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    padding: 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+
+    .link{
+        display: flex;
+        gap: 30px;
+
+        a{
+            color: $black;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 25px;
+            transition: color 0.2s ease;
+            &:hover{
+                color: $blue;
+            }
+
+        }
+    }
+
+    section{
+        display: flex;
+        gap: 30px;
+
+        .num{
+            strong{
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 25px;
+                color: $blue;
+            }
+            p{
+                font-weight: 400;
+                color: rgba(red($black), green($black), blue($black), 0.5);
+            }
+        }
+
+        .btn{
+            button{
+                width: 183px;
+                height: 55px;
+                background-color: $blue;
+                border-radius: 32px;
+                color: #fff;
+                font-size: 16px;
+                line-height: 25px;
+                transition: color 0.2s ease;
+                cursor: pointer;
+            }
+        }
+
+    }
+}
+.head_content{
+    width: 100%;
+    display: flex;
+    position: relative;
+    .left_section{
+        width: 67%;
+        height: 720px;
+        background-color: #F1F8FD;
+        .container{
+            padding: 140px 0 0 360px;
+            .top{
+                width: 530px;
+                margin-bottom: 25px;
+                h1{
+                    font-size: 52px;
+                    font-weight: 600;
+                    color: $black;
+                }
+            }
+            .middle{
+                .items{
+                    .item{
+                        margin-top: 15px;
+                        display: flex;
+                        gap: 10px;
+                        img{
+                            width: 25px;
+                            height: 25px;
+                        }
+                        p{
+                            color: $black;
+                            font-size: 18px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+            .bottom{
+                margin-top: 70px;
+                display: flex;
+                gap: 20px;
+                button{
+                    width: 206px;
+                    height: 55px;
+                    border-radius: 32px;
+                    cursor: pointer;
+                    transition: 0.2s;
+                }
+
+                .btn_help{
+                    button{
+                        background-color: $blue;
+                        color: #fff;
+                        &:hover{
+                            color: $blue;
+                            background-color: $light-blue;
+                        }
+                    }
+                }
+
+                .btn_call{
+                    button{
+                        background-color: $light-blue;
+                        color: $black;
+                        &:hover{
+                            color: #fff;
+                            background-color: $blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .right_section{
+        width: 33%;
+        height: 720px;
+        background-image: url("/public/images/icons/bg.png");
+    }
+    .doctor{
+        position: absolute;
+        bottom: -3px;
+        right: 20%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
