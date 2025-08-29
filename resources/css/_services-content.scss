@@ -1,0 +1,75 @@
+.container{
+    padding: 140px 360px;
+    .services_content {
+        h2 {
+            font-size: 52px;
+            font-weight: 600;
+            color: $black;
+        }
+        .cards{
+            display: flex;
+            gap: 20px;
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(3, 0.1fr);
+            .card{
+                width: 365px;
+                height: 495px;
+                background-color: $white-blue;
+                border-radius: 20px;
+                .top_images{
+                    img{
+                        padding: 10px 10px 0 10px;
+                        margin-bottom: 25px;
+                        width: 367px;
+                        height: 235px;
+                    }
+                }
+                .middle{
+                    width: 318px;
+                    margin: auto;
+                    strong{
+                        font-size: 24px;
+                        line-height: 24px;
+                        font-weight: 600;
+                    }
+                    p{
+                        margin-top: 15px;
+                        color: rgba(red($black), green($black), blue($black), 0.75);
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                }
+
+                .bottom{
+                    margin: 40px auto 0 auto;
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: 34px;
+                    width: 327px;
+                    height: 55px;
+                    border: 1px solid $blue;
+                    border-radius: 32px;
+                    p{
+                        display: flex;
+                        align-items: center;
+                        color: $blue;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 25px;
+                    }
+                    button{
+                        background-color: $blue;
+                        color: #fff;
+                        width: 178px;
+                        height: 54px;
+                        border-radius: 32px;
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+
