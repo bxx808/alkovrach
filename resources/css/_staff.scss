@@ -1,0 +1,55 @@
+.staff {
+    .staff_content{
+        display: flex;
+        .left{
+            h6 {
+                width: 508px;
+                font-size: 52px;
+                font-weight: 600;
+                color: $black;
+                margin-bottom: 50px;
+            }
+
+            .card {
+                width: 488px;
+                height: 150px;
+                background-color: $white-blue;
+                border-radius: 15px;
+                padding: 25px 0 0 30px;
+
+                p {
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 30px;
+                    color: $black;
+
+                }
+
+                span {
+                    display: block;
+                    margin-top: 15px;
+                    color: #3838388C;
+                }
+
+                strong {
+                    color: $blue;
+                }
+            }
+
+            .button {
+                margin-top: 100px;
+                display: flex;
+                gap: 10px;
+                cursor: pointer;
+            }
+        }
+        .right{
+            display: flex;
+            gap: 10px;
+            .people_img{
+                width: 360px;
+                height: 460px;
+            }
+        }
+    }
+}

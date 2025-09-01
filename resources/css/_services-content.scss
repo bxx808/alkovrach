@@ -71,5 +71,37 @@
             }
         }
     }
+    .treatment_content{
+        margin: 140px 0;
+        h3{
+            font-size: 52px;
+            color: $black;
+            font-weight: 600;
+        }
+        .treatment_cards{
+            display: flex;
+            gap: 10px;
+            margin-top: 45px;
+            .treatment_card{
+                .line-container{
+                    display: flex;
+                    gap: 10px;
+                    margin-top: 17px;
+
+                    .vertical-line{
+
+                        :last-child{
+                            width: 205px;
+                        }
+                    }
+                }
+                .icon{
+                    display: flex;
+                    gap: 10px;
+                    margin-top: 33px;
+                }
+            }
+        }
+    }
 }
 

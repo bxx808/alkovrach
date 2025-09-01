@@ -160,16 +160,171 @@
                 <h3>Этапы лечения</h3>
                 <div class="treatment_cards">
                     <div class="treatment_card">
-                        <img src="" alt="">
+                        <img src="{{asset('images/number/01.png')}}" alt="">
                         <div class="line-container">
-                            <div class="horizontal-line"></div>
-                            <div class="vertical-line"></div>
+                            <div class="horizontal-line">
+                                <img src="{{asset('images/card/hLine.png')}}" alt="">
+                            </div>
+                            <div class="vertical-line">
+                                <img src="{{asset('images/card/vLine.png')}}" alt="">
+                            </div>
                         </div>
                         <div class="icon">
-                            <img src="" alt="">
-                            <p></p>
+                            <img src="{{asset('images/icons/phone.png')}}" alt="">
+                            <p>Диагностика состояния</p>
                         </div>
                     </div>
+                    <div class="treatment_card">
+                        <img src="{{asset('images/number/02.png')}}" alt="">
+                        <div class="line-container">
+                            <div class="horizontal-line">
+                                <img src="{{asset('images/card/hLine.png')}}" alt="">
+                            </div>
+                            <div class="vertical-line">
+                                <img src="{{asset('images/card/vLine.png')}}" alt="">
+                            </div>
+                        </div>
+                        <div class="icon">
+                            <img src="{{asset('images/icons/card.png')}}" alt="">
+                            <p>Составление <br>
+                                плана лечения</p>
+                        </div>
+                    </div>
+                    <div class="treatment_card">
+                        <img src="{{asset('images/number/03.png')}}" alt="">
+                        <div class="line-container">
+                            <div class="horizontal-line">
+                                <img src="{{asset('images/card/hLine.png')}}" alt="">
+                            </div>
+                            <div class="vertical-line">
+                                <img src="{{asset('images/card/vLine.png')}}" alt="">
+                            </div>
+                        </div>
+                        <div class="icon">
+                            <img src="{{asset('images/icons/fastCar.png')}}" alt="">
+                            <p>Снятие <br>
+                                симптомов</p>
+                        </div>
+                    </div>
+                    <div class="treatment_card">
+                        <img src="{{asset('images/number/04.png')}}" alt="">
+                        <div class="line-container">
+                            <div class="horizontal-line">
+                                <img src="{{asset('images/card/hLine.png')}}" alt="">
+                            </div>
+                            <div class="vertical-line">
+                                <img src="{{asset('images/card/vLine.png')}}" alt="">
+                            </div>
+                        </div>
+                        <div class="icon">
+                            <img src="{{asset('images/icons/ivdrip.png')}}" alt="">
+                            <p>Восстановление организма</p>
+                        </div>
+                    </div>
+                    <div class="treatment_card">
+                        <img src="{{asset('images/number/05.png')}}" alt="">
+                        <div class="line-container">
+                            <div class="horizontal-line">
+                                <img src="{{asset('images/card/hLine.png')}}" alt="">
+                            </div>
+                            <div class="vertical-line">
+                                <img src="{{asset('images/card/vLine.png')}}" alt="">
+                            </div>
+                        </div>
+                        <div class="icon">
+                            <img src="{{asset('images/icons/medic.png')}}" alt="">
+                            <p>Бесплатные консультации</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="container">
+            <div class="top">
+                <div class="left">
+                    <h4>О клинике</h4>
+                    <p>Наши квалифицированные врачи и наркологи предлагают широкий спектр наркологических услуг, включая стационарное лечение, кодирование, и многие другие виды лечения. Мы заботимся о каждом пациенте и гарантируем высокое качество нашей работы. Не стесняйтесь обращаться к нам в любое время, мы всегда готовы оказать наркологическую помощь.</p>
+                    <div class="links">
+                        <div class="link">
+                            <img src="{{asset('images/logo/user.png')}}" alt="">
+                            <strong>Квалифицированные врачи-наркологи</strong>
+                        </div>
+                        <div class="link">
+                            <img src="{{asset('images/logo/bag.png')}}" alt="">
+                            <strong>Находим решение даже в сложных ситуациях</strong>
+                        </div>
+                        <div class="link">
+                            <img src="{{asset('images/logo/card.png')}}" alt="">
+                            <strong>Используем импортные проверенные препараты</strong>
+                        </div>
+                        <div class="link">
+                            <img src="{{asset('images/logo/topCard.png')}}" alt="">
+                            <strong>Лицензия Л041-01177-91/00561129</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <img class="medic_img" src="{{asset('images/card/medic.png')}}" alt="">
+                    <div class="button">
+                        <div class="left">
+                            <img src="{{asset('images/icons/rectangle_l.png')}}" alt="">
+                        </div>
+                        <div class="right">
+                            <img src="{{asset('images/icons/rectangle_r.png')}}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vertical_line">
+                <img src="{{assert('images/card/vector.png')}}">
+            </div>
+            <div class="bottom">
+                <h5>Имеем все необходимые документы для предоставления медицинских услуг:</h5>
+                <div class="cards">
+                    <div class="card">
+                        <img src="{{asset('images/doc/1.png')}}" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="{{asset('images/doc/2.png')}}" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="{{asset('images/doc/3.png')}}" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="{{asset('images/doc/4.png')}}" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="{{asset('images/doc/5.png')}}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="staff">
+        <div class="container">
+            <div class="staff_content">
+                <div class="left">
+                    <h6>Медицинский персонал</h6>
+                    <div class="card">
+                        <p>Меринов Артём Вячеславович</p>
+                        <span>Cпециализация: <strong>Врач-Нарколог</strong></span>
+                        <span>Опыт работы: <strong>12 лет</strong></span>
+                    </div>
+                    <div class="button">
+                        <div class="left_btn">
+                            <img src="{{asset('images/icons/rectangle_l.png')}}" alt="">
+                        </div>
+                        <div class="right_btn">
+                            <img src="{{asset('images/icons/rectangle_r.png')}}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <img class="people_img" src="{{asset('images/people/people1.png')}}" alt="">
+                    <img class="people_img" src="{{asset('images/people/people2.png')}}" alt="">
+                    <img class="people_img" src="{{asset('images/people/people3.png')}}" alt="">
                 </div>
             </div>
         </div>

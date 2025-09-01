@@ -1,0 +1,92 @@
+.about {
+    background-color: $white-blue;
+    width: 100%;
+
+    .top {
+        display: flex;
+        gap: 90px;
+        margin-bottom: 50px;
+        .left {
+            width: 550px;
+            h4 {
+                font-size: 52px;
+                font-weight: 600;
+                color: $black;
+                margin-bottom: 25px;
+                line-height: 55px;
+            }
+            p {
+                line-height: 25px;
+                font-size: 16px;
+                font-weight: 400;
+                color: $black;
+                margin-bottom: 40px;
+            }
+            .links{
+                .link{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    strong{
+                        color: $black;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+        .right{
+            position: relative;
+            .medic_img{
+                margin: 15px 0 0 0;
+            }
+
+            .button{
+                display: flex;
+                background-color: #fff;
+                border-radius: 43px;
+                width: 115px;
+                height: 60px;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                bottom: 15px;
+                right: 15px;
+                cursor: pointer;
+                gap: 5px;
+
+                .left{
+                    width: 50px;
+                    height: 50px;
+                }
+
+                .right{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+
+    .vertical_line{
+        margin-bottom: 40px;
+    }
+
+    .bottom{
+        h5{
+            color: $black;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 30px;
+        }
+        .cards{
+            display: flex;
+            gap: 20px;
+            .card{
+
+            }
+        }
+    }
+}
