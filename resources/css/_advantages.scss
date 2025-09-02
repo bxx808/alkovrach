@@ -1,0 +1,148 @@
+.advantages {
+    background-color: $white-blue;
+
+    .advantages_content {
+        .top {
+            display: flex;
+            gap: 60px;
+
+            .right {
+                .header {
+                    h1 {
+                        color: $black;
+                        font-size: 52px;
+                        font-weight: 600;
+                        line-height: 55px;
+                        margin-bottom: 25px;
+                    }
+
+                    p {
+                        color: $black;
+                        font-size: 16px;
+                        line-height: 25px;
+                        font-weight: 400;
+                        margin-bottom: 50px;
+                    }
+                }
+
+                .items {
+                    h2 {
+                        color: $black;
+                        font-size: 24px;
+                        line-height: 30px;
+                        font-weight: 600;
+                        margin-bottom: 20px;
+                    }
+
+                    .item {
+                        display: flex;
+                        gap: 10px;
+                        margin-bottom: 25px;
+
+                        span {
+                            color: $black;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 25px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            background: linear-gradient(
+                    90deg,
+                    #0095F1,
+                    #0DA3FF,
+                    #0DA3FF
+            );
+            width: 1200px;
+            height: 295px;
+            border-radius: 20px;
+            display: flex;
+            margin-top: 35px;
+            margin-bottom: 140px;
+
+            .left {
+                padding: 45px 50px 45px 50px;
+
+                h2 {
+                    font-size: 32px;
+                    font-weight: 600;
+                    color: #fff;
+                    text-transform: uppercase;
+                    width: 435px;
+                    line-height: 35px;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    color: #fff;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 25px;
+                    width: 503px;
+                    margin-bottom: 15px;
+                }
+
+                span {
+                    color: #fff;
+                    width: 510px;
+                }
+            }
+
+            .right {
+                padding: 50px 50px 50px 0;
+                margin-left: 56px;
+
+                .input_group {
+                    display: flex;
+                    gap: 20px;
+
+                    input {
+                        background-color: rgba(255, 255, 255, 0.3);
+                        color: #ffffff;
+                        width: 232px;
+                        height: 55px;
+                        border-radius: 32px;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 25px;
+                        padding-left: 25px;
+                    }
+                }
+
+                button {
+                    width: 484px;
+                    height: 55px;
+                    background-color: #fff;
+                    color: $button-blue;
+                    border-radius: 32px;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 25px;
+                    cursor: pointer;
+                    margin-top: 20px;
+                    display: block;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    color: rgba(255, 255, 255, 0.55);
+                    width: 440px;
+                    font-weight: 500;
+                    font-size: 14px;
+
+                    a {
+                        color: rgba(255, 255, 255, 0.55);
+                        font-weight: 500;
+                        font-size: 14px;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
