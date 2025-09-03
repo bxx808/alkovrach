@@ -1,0 +1,28 @@
+.footer {
+    .top {
+        background-color: $black-footer;
+        text-align: center;
+        height: 190px;
+        padding-top: 30px;
+
+        p {
+            color: #FFFFFF8C;
+            margin-bottom: 10px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    .bottom {
+        background-color: $night-black;
+        height: 40px;
+        padding: 10px 0;
+
+        p {
+            color: #fff;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,80 @@
+.gnawing {
+    background: linear-gradient(91.75deg, #0095F1 0%, #0DA3FF 103.58%, #0DA3FF 103.58%);
+    height: 475px;
+
+    .container {
+        padding-top: 100px;
+        .gnawing_content {
+            display: flex;
+            position: relative;
+            .left {
+                h1 {
+                    font-weight: 600;
+                    font-size: 52px;
+                    line-height: 55px;
+                    color: #fff;
+                }
+
+                p {
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 30px;
+                    color: #fff;
+                    margin-top: 20px;
+                }
+
+                .input_group {
+                    display: flex;
+                    gap: 20px;
+
+                    input {
+                        margin-top: 40px;
+                        color: #fff;
+                        background: #FFFFFF4D;
+                        width: 336px;
+                        height: 55px;
+                        border-radius: 32px;
+                        padding-left: 20px;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 25px;
+                    }
+                }
+
+                .button_group {
+                    display: flex;
+                    gap: 20px;
+                    button {
+                        width: 336px;
+                        height: 55px;
+                        background-color: #fff;
+                        color: $button-blue;
+                        cursor: pointer;
+                        border-radius: 32px;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 25px;
+                        margin-top: 20px;
+                    }
+
+                    span {
+                        font-size: 13px;
+                        font-weight: 500;
+                        color: #FFFFFF8C;
+                        line-height: 20px;
+                        margin-top: 30px;
+                        a{
+                            color: #FFFFFF8C;
+                        }
+                    }
+                }
+            }
+            .right{
+                position: absolute;
+                top: -44.5%;
+                right: 7%;
+            }
+
+        }
+    }
+}
