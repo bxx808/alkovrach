@@ -1,6 +1,7 @@
 .staff {
     .staff_content{
         display: flex;
+        gap: 60px;
         .left{
             h6 {
                 width: 508px;
@@ -10,7 +11,7 @@
                 margin-bottom: 50px;
             }
 
-            .card {
+            .card_staff {
                 width: 488px;
                 height: 150px;
                 background-color: $white-blue;
@@ -45,7 +46,6 @@
         }
         .right{
             display: flex;
-            gap: 10px;
             .people_img{
                 width: 360px;
                 height: 460px;

@@ -23,7 +23,27 @@
                     <p>Работаем 24/7</p>
                 </div>
                 <div class="btn">
-                    <button>Заказать звонок</button>
+                    <button id="orderCallBtn">Заказать звонок</button>
+
+                    <div id="modal" class="modal" style="display: none;">
+                        <div class="modal-content">
+                            <span class="close-btn" id="closeModal">&times;</span>
+                            <h2>Заказать звонок</h2>
+                            <p>Просто оставьте заявку и мы вам перезвоним в ближайшее время</p>
+                            <form action="">
+                                <div class="input_group">
+                                    <input placeholder="Ваше имя">
+                                    <input placeholder="+7 999-999-99-99">
+                                </div>
+                                <div class="button_group">
+                                    <button>Отправить</button>
+                                    <span> Нажимая кнопку «Получить консультацию», вы <br>
+                                    соглашаетесь с <a href="">политикой конфиденциальности</a>
+                                     </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
@@ -75,8 +95,8 @@
         <div class="container">
             <div class="services_content">
                 <h2>Наши услуги</h2>
-                <div class="cards">
-                    <div class="card">
+                <div class="cards_services">
+                    <div class="card_services">
                         <div class="top_images">
                             <img src="{{asset('images/card/card1.png')}}">
                         </div>
@@ -90,7 +110,7 @@
                             <button>Начать лечение</button>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card_services">
                         <div class="top_images">
                             <img src="{{asset('images/card/card2.png')}}">
                         </div>
@@ -103,7 +123,7 @@
                             <button>Начать лечение</button>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card_services">
                         <div class="top_images">
                             <img src="{{asset('images/card/card3.png')}}">
                         </div>
@@ -117,7 +137,7 @@
                             <button>Начать лечение</button>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card_services">
                         <div class="top_images">
                             <img src="{{asset('images/card/card4.png')}}">
                         </div>
@@ -131,7 +151,7 @@
                             <button>Начать лечение</button>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card_services">
                         <div class="top_images">
                             <img src="{{asset('images/card/card5.png')}}">
                         </div>
@@ -144,7 +164,7 @@
                             <button>Начать лечение</button>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card_services">
                         <div class="top_images">
                             <img src="{{asset('images/card/card6.png')}}">
                         </div>
@@ -175,7 +195,8 @@
                         </div>
                         <div class="icon">
                             <img src="{{asset('images/icons/phone.png')}}" alt="">
-                            <p>Диагностика состояния</p>
+                            <p>Диагностика <br>
+                                состояния</p>
                         </div>
                     </div>
                     <div class="treatment_card">
@@ -222,7 +243,8 @@
                         </div>
                         <div class="icon">
                             <img src="{{asset('images/icons/ivdrip.png')}}" alt="">
-                            <p>Восстановление организма</p>
+                            <p>Восстановление <br>
+                                организма</p>
                         </div>
                     </div>
                     <div class="treatment_card">
@@ -237,7 +259,8 @@
                         </div>
                         <div class="icon">
                             <img src="{{asset('images/icons/medic.png')}}" alt="">
-                            <p>Бесплатные консультации</p>
+                            <p>Бесплатные <br>
+                                консультации</p>
                         </div>
                     </div>
                 </div>
@@ -285,25 +308,25 @@
                 </div>
             </div>
             <div class="vertical_line">
-                <img src="{{assert('images/card/vector.png')}}">
             </div>
             <div class="bottom">
                 <h5>Имеем все необходимые документы для предоставления медицинских услуг:</h5>
-                <div class="cards">
-                    <div class="card">
+                <div class="cards_about">
+                    <div class="card_about">
                         <img src="{{asset('images/doc/1.png')}}" alt="">
+                        <div class="plus_circle">+</div>
                     </div>
-                    <div class="card">
+                    <div class="card_about">
                         <img src="{{asset('images/doc/2.png')}}" alt="">
+                        <div class="plus_circle">+</div>
                     </div>
-                    <div class="card">
+                    <div class="card_about">
                         <img src="{{asset('images/doc/3.png')}}" alt="">
+                        <div class="plus_circle">+</div>
                     </div>
-                    <div class="card">
+                    <div class="card_about">
                         <img src="{{asset('images/doc/4.png')}}" alt="">
-                    </div>
-                    <div class="card">
-                        <img src="{{asset('images/doc/5.png')}}" alt="">
+                        <div class="plus_circle">+</div>
                     </div>
                 </div>
             </div>
@@ -314,7 +337,7 @@
             <div class="staff_content">
                 <div class="left">
                     <h6>Медицинский персонал</h6>
-                    <div class="card">
+                    <div class="card_staff">
                         <p>Меринов Артём Вячеславович</p>
                         <span>Cпециализация: <strong>Врач-Нарколог</strong></span>
                         <span>Опыт работы: <strong>12 лет</strong></span>
@@ -501,13 +524,31 @@
                             <img class="marks" src="{{asset('images/icons/marks.png')}}" alt="">
                             <strong>ИННА</strong>
                             <p class="link">Моему сыну 28 лет, но он начал злоупотреблять алкоголем, связался с
-                                компанией таких же
-                                неприятных ребят, бросил работу. Пришлось выводить его из запоя и отправлять на лечение,
-                                реабилитацию. Сотрудники центра сделали для нашей семьи очень многое, они вылечили моего
-                                ребенка от зависимости и помогли мне пережить этот сложный период.</p>
-                            <a href="">Читать полностью</a>
+                                компанией таких же неприятных ребят, бросил работу. Пришлось выводить его из запоя и
+                                отправлять на лечение, реабилитацию. Сотрудники центра сделали для нашей семьи очень
+                                многое, они вылечили моего ребенка от зависимости и помогли мне пережить этот сложный
+                                период.</p>
+                            <a href="#" class="read-more">Читать полностью</a>
                             <img class="vector" src="{{asset('images/card/vector_reviews.png')}}" alt="">
                             <span>28.04.2023</span>
+                        </div>
+
+                        <div id="modal_link" class="modal">
+                            <div class="modal_container">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <h2>ИННА</h2>
+                                    <p>Моему сыну 28 лет, но он начал злоупотреблять алкоголем, связался с компанией таких
+                                        же неприятных ребят, бросил работу. Пришлось выводить его из запоя и отправлять на
+                                        лечение, реабилитацию. Сотрудники центра сделали для нашей семьи очень многое, они
+                                        вылечили моего ребенка от зависимости и помогли мне пережить этот сложный
+                                        период.</p>
+                                    <strong>Моему сыну 28 лет, но он начал злоупотреблять алкоголем, связался с компанией
+                                        таких же неприятных ребят, бросил работу.</strong>
+                                    <img class="vector" src="{{asset('images/card/vector_reviews.png')}}" alt="">
+                                    <span>28.04.2023</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="item">
                             <img class="marks" src="{{asset('images/icons/marks.png')}}" alt="">
@@ -551,10 +592,13 @@
     </div>
     <div class="footer">
         <div class="top">
-            <p>Услуги предоставляются ООО «ДЕТОКС» по лицензии Л041-01177-91/00561129 от 02.02.2022 г. ОГРН - 1182375001511; ИНН: 2312268085</p>
+            <p>Услуги предоставляются ООО «ДЕТОКС» по лицензии Л041-01177-91/00561129 от 02.02.2022 г. ОГРН -
+                1182375001511; ИНН: 2312268085</p>
             <p>295017, Республика Крым, г. Симферополь, ул. Киевская/пр-кт Победы, д. 75/1 (литера А)</p>
-            <p>350000, Краснодарский край, г. Краснодар, тер Западный внутригородской округ, ул. Северная, д. 324, кв. 8, 9, 9/1, 10, 11, 3-й этаж</p>
-            <p>Информация, предоставляемая на данном сайте, не замещает посещения вашего лечащего доктора. Она носит исключительно информационный<br>
+            <p>350000, Краснодарский край, г. Краснодар, тер Западный внутригородской округ, ул. Северная, д. 324, кв.
+                8, 9, 9/1, 10, 11, 3-й этаж</p>
+            <p>Информация, предоставляемая на данном сайте, не замещает посещения вашего лечащего доктора. Она носит
+                исключительно информационный<br>
                 характер и не является публичной офертой.</p>
         </div>
         <div class="bottom">
