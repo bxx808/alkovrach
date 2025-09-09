@@ -1,6 +1,7 @@
 import './bootstrap';
 import './popup_nav';
 import './popup_questions';
+import './burger_menu'
 import '../css/app.scss';
 import '@fontsource/inter';
 import '@fontsource/inter/600.css';
