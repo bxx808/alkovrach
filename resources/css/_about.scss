@@ -1,139 +1,224 @@
 .about {
     background-color: $white-blue;
     width: 100%;
+    @include respond-to(xs){
+        overflow: hidden;
+    }
 
-    .top {
-        display: flex;
-        gap: 90px;
-        margin-bottom: 50px;
+    .container{
+        @include respond-to(sm){
+            padding: 100px 15px;
+        }
+        @include respond-to(xs){
+            padding: 70px 15px;
+        }
+        .top {
+            display: flex;
+            gap: 90px;
+            margin-bottom: 50px;
+            @include respond-to(md){
+                flex-direction: column;
+            }
+            @include respond-to(xs){
+               gap: 25px;
+            }
+            .left {
+                width: 550px;
+                @include respond-to(md){
+                    order: 2;
+                }
+                h4 {
+                    font-size: 52px;
+                    font-weight: 600;
+                    color: $black;
+                    margin-bottom: 25px;
+                    line-height: 55px;
+                    @include respond-to(xs){
+                        font-size: 30px;
+                        line-height: 35px;
+                    }
+                }
 
-        .left {
-            width: 550px;
+                p {
+                    line-height: 25px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: $black;
+                    margin-bottom: 40px;
+                    @include respond-to(md){
+                        width: 500px;
+                    }
+                    @include respond-to(xs){
+                        font-size: 14px;
+                        line-height: 20px;
+                        width: 300px;
+                        margin-bottom: 25px;
+                    }
+                }
 
-            h4 {
-                font-size: 52px;
-                font-weight: 600;
-                color: $black;
-                margin-bottom: 25px;
-                line-height: 55px;
+                .links {
+                    @include respond-to(xs){
+                        width: 300px;
+                    }
+                    .link {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        strong {
+                            color: $black;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 25px;
+                        }
+                    }
+                }
             }
 
-            p {
-                line-height: 25px;
-                font-size: 16px;
-                font-weight: 400;
-                color: $black;
-                margin-bottom: 40px;
-            }
+            .right {
+                position: relative;
+                @include respond-to(md){
+                    order: 1;
+                }
+                .medic_img {
+                    margin: 15px 0 0 0;
+                    @include respond-to(md){
+                        width: 690px;
+                        height: 490px;
+                    }
+                    @include respond-to(sm){
+                        width: 515px;
+                        height: 390px;
+                    }
+                    @include respond-to(xs){
+                        width: 290px;
+                        height: 220px;
+                    }
+                }
 
-            .links {
-                .link {
+                .button {
                     display: flex;
+                    background-color: #fff;
+                    border-radius: 43px;
+                    width: 115px;
+                    height: 60px;
                     align-items: center;
-                    gap: 10px;
+                    justify-content: center;
+                    position: absolute;
+                    bottom: 15px;
+                    right: 15px;
+                    cursor: pointer;
+                    gap: 5px;
+                    @include respond-to(md){
+                        display: none;
+                    }
+                    .left {
+                        width: 50px;
+                        height: 50px;
+                    }
 
-                    strong {
-                        color: $black;
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 25px;
+                    .right {
+                        width: 50px;
+                        height: 50px;
                     }
                 }
             }
         }
 
-        .right {
-            position: relative;
-
-            .medic_img {
-                margin: 15px 0 0 0;
-            }
-
-            .button {
-                display: flex;
-                background-color: #fff;
-                border-radius: 43px;
-                width: 115px;
-                height: 60px;
-                align-items: center;
-                justify-content: center;
-                position: absolute;
-                bottom: 15px;
-                right: 15px;
-                cursor: pointer;
-                gap: 5px;
-
-                .left {
-                    width: 50px;
-                    height: 50px;
-                }
-
-                .right {
-                    width: 50px;
-                    height: 50px;
-                }
-            }
-        }
-    }
-
-    .vertical_line {
-        width: 1220px;
-        height: 0px;
-        opacity: 1;
-        border-top: 1px solid #DDEBF4;
-        margin-bottom: 40px;
-    }
-
-    .bottom {
-        h5 {
-            color: $black;
-            font-weight: 600;
-            font-size: 24px;
-            line-height: 30px;
-            margin-bottom: 30px;
+        .vertical_line {
+            width: 100%;
+            opacity: 1;
+            border-top: 1px solid #DDEBF4;
+            margin-bottom: 40px;
         }
 
-        .cards_about {
-            display: flex;
-            gap: 20px;
-
-            .card_about {
-                position: relative;
-                display: inline-block;
-                margin: 10px;
+        .bottom {
+            h5 {
+                color: $black;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 30px;
+                margin-bottom: 30px;
+                @include respond-to(xs){
+                    font-size: 18px;
+                    line-height: 25px;
+                    width: 300px;
+                    margin-bottom: 25px;
+                }
             }
 
-
-            .card_about img {
-                display: block;
-                max-width: 100%;
-            }
-
-
-            .plus_circle {
-                position: absolute;
-                width: 80px;
-                height: 80px;
-                background: #0DA3FF;
-                border-radius: 50%;
+            .cards_about {
                 display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 36px;
-                color: #fff;
-                font-weight: bold;
-                cursor: pointer;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                opacity: 0; // Изначально невидим
-                transition: opacity 0.3s ease;
-                z-index: 10;
-            }
+                gap: 20px;
+                @include respond-to(sm){
+                    gap: 10px;
+                }
+                @include respond-to(xs){
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    width: 100vw;
+                    position: relative;
+                    left: 70%;
+                    margin-left: -50vw;
+                    margin-right: -50vw;
+                }
+
+                .card_about {
+                    position: relative;
+                    display: inline-block;
+                    margin: 10px;
+                    @include respond-to(sm){
+                        margin: 0;
+                    }
+                    @include respond-to(xs){
+                        display: flex;
+                    }
+                }
 
 
-            .card_about:hover .plus_circle {
-                opacity: 1;
+                .block{
+                    @include respond-to(xs){
+                        display: none;
+                    }
+                }
+
+
+                .card_about img {
+                    display: block;
+                    max-width: 100%;
+                }
+
+
+                .plus_circle {
+                    position: absolute;
+                    width: 80px;
+                    height: 80px;
+                    background: #0DA3FF;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 36px;
+                    color: #fff;
+                    font-weight: bold;
+                    cursor: pointer;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    opacity: 0; // Изначально невидим
+                    transition: opacity 0.3s ease;
+                    z-index: 10;
+                    @include respond-to(md){
+                        width: 50px;
+                        height: 50px;
+                        font-size: 26px;
+                    }
+                }
+
+
+                .card_about:hover .plus_circle {
+                    opacity: 1;
+                }
             }
         }
     }

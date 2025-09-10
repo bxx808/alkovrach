@@ -312,19 +312,19 @@
             <div class="bottom">
                 <h5>Имеем все необходимые документы для предоставления медицинских услуг:</h5>
                 <div class="cards_about">
-                    <div class="card_about">
+                    <div class="card_about full-center">
                         <img src="{{asset('images/doc/1.png')}}" alt="">
                         <div class="plus_circle">+</div>
                     </div>
-                    <div class="card_about">
+                    <div class="card_about half-hidden">
                         <img src="{{asset('images/doc/2.png')}}" alt="">
                         <div class="plus_circle">+</div>
                     </div>
-                    <div class="card_about">
+                    <div class="card_about block">
                         <img src="{{asset('images/doc/3.png')}}" alt="">
                         <div class="plus_circle">+</div>
                     </div>
-                    <div class="card_about">
+                    <div class="card_about block">
                         <img src="{{asset('images/doc/4.png')}}" alt="">
                         <div class="plus_circle">+</div>
                     </div>
