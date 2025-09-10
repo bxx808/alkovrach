@@ -1,45 +1,143 @@
-.container{
+.container {
     padding: 140px 360px;
+    @include respond-to(xs) {
+        padding: 70px 0;
+    }
+
     .services_content {
+        @include respond-to(xxl) {
+            margin-left: 40px;
+        }
+        @include respond-to(xl) {
+            margin-left: 0;
+        }
+        @include respond-to(lg) {
+            margin-left: 40px;
+        }
+        @include respond-to(md) {
+            margin-left: 0;
+        }
+        @include respond-to(sm) {
+            margin-left: 15px;
+        }
+        @include respond-to(xs) {
+            margin-left: 0;
+        }
+
         h2 {
             font-size: 52px;
             font-weight: 600;
             color: $black;
+            @include respond-to(xs) {
+                font-size: 30px;
+                line-height: 35px;
+            }
         }
-        .cards_services{
+
+        .cards_services {
             gap: 30px;
             margin-top: 40px;
             display: grid;
             grid-template-columns: repeat(3, 0.1fr);
-            .card_services{
+            @include respond-to(xl) {
+                gap: 40px;
+            }
+            @include respond-to(lg) {
+                grid-template-columns: repeat(2, 0.1fr);
+                gap: 60px;
+            }
+            @include respond-to(md) {
+                gap: 12px;
+            }
+            @include respond-to(sm) {
+                grid-template-columns: repeat(1, 0.1fr);
+                gap: 20px;
+            }
+
+            .card_services {
                 width: 387px;
                 height: 515px;
                 background-color: $white-blue;
                 border-radius: 20px;
-                .top_images{
-                    img{
+                @include respond-to(xl) {
+                    width: 344px;
+                }
+                @include respond-to(lg) {
+                    width: 400px;
+                }
+                @include respond-to(md) {
+                    width: 344px;
+                }
+                @include respond-to(sm) {
+                    width: 487px;
+                }
+                @include respond-to(xs) {
+                    width: 300px;
+                    height: 375px;
+                }
+
+                .top_images {
+                    img {
                         margin: 10px 10px 25px 10px;
                         width: 367px;
                         height: 235px;
+                        @include respond-to(xl) {
+                            width: 324px;
+                            height: 225px;
+                        }
+                        @include respond-to(lg) {
+                            width: 377px;
+                            height: 235px;
+                        }
+                        @include respond-to(md) {
+                            width: 324px;
+                            height: 225px;
+                        }
+                        @include respond-to(sm) {
+                            width: 467px;
+                            height: 255px;
+                        }
+                        @include respond-to(xs) {
+                            width: 280px;
+                            height: 167px;
+                        }
                     }
                 }
-                .middle{
+
+                .middle {
                     width: 318px;
                     margin: auto;
-                    strong{
+                    @include respond-to(sm) {
+                        width: 387px;
+                    }
+                    @include respond-to(xs) {
+                        width: 260px;
+                    }
+
+                    strong {
                         font-size: 24px;
                         line-height: 24px;
                         font-weight: 600;
+                        @include respond-to(xs) {
+                            font-size: 20px;
+                            line-height: 25px;
+                        }
                     }
-                    p{
+
+                    p {
                         margin-top: 15px;
                         color: rgba(red($black), green($black), blue($black), 0.75);
                         font-size: 16px;
                         font-weight: 400;
+                        @include respond-to(xs) {
+                            font-size: 14px;
+                            line-height: 20px;
+                            margin-top: 10px;
+                        }
                     }
                 }
 
-                .bottom{
+                .bottom {
                     margin: 40px auto 0 auto;
                     display: flex;
                     justify-content: flex-end;
@@ -48,14 +146,30 @@
                     height: 55px;
                     border: 1px solid $blue;
                     border-radius: 32px;
-                    p{
+                    @include respond-to(sm) {
+                        width: 387px;
+                        gap: 64px;
+                    }
+                    @include respond-to(xs) {
+                        margin: 0 auto;
+                        width: 260px;
+                        height: 50px;
+                        gap: 10px;
+                    }
+
+                    p {
                         margin-top: 13px;
                         color: $blue;
                         font-weight: 600;
                         font-size: 16px;
                         line-height: 25px;
+                        @include respond-to(xs) {
+                            font-size: 14px;
+                            line-height: 24px;
+                        }
                     }
-                    button{
+
+                    button {
                         background-color: $blue;
                         color: #fff;
                         width: 178px;
@@ -63,42 +177,115 @@
                         border-radius: 32px;
                         font-size: 16px;
                         font-weight: 600;
+                        @include respond-to(sm) {
+                            width: 200px;
+                        }
+                        @include respond-to(xs) {
+                            width: 150px;
+                            height: 50px;
+                            font-size: 14px;
+                            line-height: 24px;
+                        }
                     }
                 }
             }
         }
     }
-    .treatment_content{
+
+    .treatment_content {
         margin: 140px 0;
-        h3{
+        @include respond-to(xxl) {
+            margin-left: 45px;
+        }
+        @include respond-to(xl) {
+            margin: 140px 0;
+        }
+        @include respond-to(lg) {
+            margin: 140px 45px 0 45px;
+        }
+        @include respond-to(md) {
+            margin: 140px 0 0 0;
+        }
+        @include respond-to(sm) {
+            margin: 140px 15px 0 15px;
+        }
+        @include respond-to(xs) {
+            margin: 100px 0 0 0;
+        }
+
+        h3 {
             font-size: 52px;
             color: $black;
             font-weight: 600;
+            @include respond-to(xs) {
+                font-size: 30px;
+                line-height: 35px;
+            }
         }
-        .treatment_cards{
+
+        .treatment_cards {
             display: flex;
             gap: 30px;
             margin-top: 45px;
-            .treatment_card{
-                .line-container{
+            @include respond-to(xl) {
+                gap: 10px;
+            }
+            @include respond-to(lg) {
+                display: block;
+                gap: 10px;
+            }
+
+            .treatment_card {
+                @include respond-to(lg) {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    margin-top: 15px;
+                }
+
+                .number-img {
+                    @include respond-to(lg) {
+                        order: 2;
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+
+                .line-container {
                     display: flex;
                     gap: 10px;
                     margin-top: 17px;
+                    @include respond-to(lg) {
+                        display: none;
+                    }
 
-                    .vertical-line{
+                    .vertical-line {
 
-                        :last-child{
+                        :last-child {
                             width: 205px;
                         }
                     }
                 }
-                .icon{
+
+                .icon {
                     display: flex;
                     gap: 10px;
                     margin-top: 33px;
-                    img{
+                    @include respond-to(lg) {
+                        order: 1;
+                        margin-top: 0;
+                    }
+
+                    img {
                         width: 50px;
                         height: 50px;
+                    }
+
+                    p {
+                        @include respond-to(xs) {
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
                     }
                 }
             }

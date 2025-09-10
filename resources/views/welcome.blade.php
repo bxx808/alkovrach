@@ -184,7 +184,7 @@
                 <h3>Этапы лечения</h3>
                 <div class="treatment_cards">
                     <div class="treatment_card">
-                        <img src="{{asset('images/number/01.png')}}" alt="">
+                        <img class="number-img" src="{{asset('images/number/01.png')}}" alt="">
                         <div class="line-container">
                             <div class="horizontal-line">
                                 <img src="{{asset('images/card/hLine.png')}}" alt="">
@@ -200,7 +200,7 @@
                         </div>
                     </div>
                     <div class="treatment_card">
-                        <img src="{{asset('images/number/02.png')}}" alt="">
+                        <img class="number-img" src="{{asset('images/number/02.png')}}" alt="">
                         <div class="line-container">
                             <div class="horizontal-line">
                                 <img src="{{asset('images/card/hLine.png')}}" alt="">
@@ -216,7 +216,7 @@
                         </div>
                     </div>
                     <div class="treatment_card">
-                        <img src="{{asset('images/number/03.png')}}" alt="">
+                        <img class="number-img" src="{{asset('images/number/03.png')}}" alt="">
                         <div class="line-container">
                             <div class="horizontal-line">
                                 <img src="{{asset('images/card/hLine.png')}}" alt="">
@@ -232,7 +232,7 @@
                         </div>
                     </div>
                     <div class="treatment_card">
-                        <img src="{{asset('images/number/04.png')}}" alt="">
+                        <img class="number-img" src="{{asset('images/number/04.png')}}" alt="">
                         <div class="line-container">
                             <div class="horizontal-line">
                                 <img src="{{asset('images/card/hLine.png')}}" alt="">
@@ -248,7 +248,7 @@
                         </div>
                     </div>
                     <div class="treatment_card">
-                        <img src="{{asset('images/number/05.png')}}" alt="">
+                        <img class="number-img" src="{{asset('images/number/05.png')}}" alt="">
                         <div class="line-container">
                             <div class="horizontal-line">
                                 <img src="{{asset('images/card/hLine.png')}}" alt="">
@@ -538,12 +538,16 @@
                                 <div class="modal-content">
                                     <span class="close">&times;</span>
                                     <h2>ИННА</h2>
-                                    <p>Моему сыну 28 лет, но он начал злоупотреблять алкоголем, связался с компанией таких
-                                        же неприятных ребят, бросил работу. Пришлось выводить его из запоя и отправлять на
-                                        лечение, реабилитацию. Сотрудники центра сделали для нашей семьи очень многое, они
+                                    <p>Моему сыну 28 лет, но он начал злоупотреблять алкоголем, связался с компанией
+                                        таких
+                                        же неприятных ребят, бросил работу. Пришлось выводить его из запоя и отправлять
+                                        на
+                                        лечение, реабилитацию. Сотрудники центра сделали для нашей семьи очень многое,
+                                        они
                                         вылечили моего ребенка от зависимости и помогли мне пережить этот сложный
                                         период.</p>
-                                    <strong>Моему сыну 28 лет, но он начал злоупотреблять алкоголем, связался с компанией
+                                    <strong>Моему сыну 28 лет, но он начал злоупотреблять алкоголем, связался с
+                                        компанией
                                         таких же неприятных ребят, бросил работу.</strong>
                                     <img class="vector" src="{{asset('images/card/vector_reviews.png')}}" alt="">
                                     <span>28.04.2023</span>
