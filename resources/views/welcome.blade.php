@@ -337,10 +337,15 @@
             <div class="staff_content">
                 <div class="left">
                     <h6>Медицинский персонал</h6>
-                    <div class="card_staff">
+                    <div class="card_staff card_m">
                         <p>Меринов Артём Вячеславович</p>
                         <span>Cпециализация: <strong>Врач-Нарколог</strong></span>
                         <span>Опыт работы: <strong>12 лет</strong></span>
+                    </div>
+                    <div class="card_staff card_i">
+                        <p>Иванова Мария Петровна</p>
+                        <span>Cпециализация: <strong>Психолог</strong></span>
+                        <span>Опыт работы: <strong>8 лет</strong></span>
                     </div>
                     <div class="button">
                         <div class="left_btn">
@@ -354,7 +359,7 @@
                 <div class="right">
                     <img class="people_img" src="{{asset('images/people/people1.png')}}" alt="">
                     <img class="people_img" src="{{asset('images/people/people2.png')}}" alt="">
-                    <img class="people_img" src="{{asset('images/people/people3.png')}}" alt="">
+                    <img class="people_img block" src="{{asset('images/people/people3.png')}}" alt="">
                 </div>
             </div>
         </div>
