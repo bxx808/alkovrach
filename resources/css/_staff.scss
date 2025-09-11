@@ -7,7 +7,7 @@
         .staff_content {
             display: flex;
             gap: 60px;
-            @include respond-to(xxl){
+            @include respond-to(md){
                 display: block;
             }
 
