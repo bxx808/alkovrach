@@ -5,6 +5,26 @@
         .top {
             display: flex;
             gap: 60px;
+            @include respond-to(md){
+                display: block;
+            }
+
+            .left{
+                img{
+                    @include respond-to(lg){
+                        width: 500px;
+                    }
+                    @include respond-to(md){
+                        width: 700px;
+                    }
+                    @include respond-to(sm){
+                        width: 515px;
+                    }
+                    @include respond-to(xs){
+                        width: 295px;
+                    }
+                }
+            }
 
             .right {
                 .header {
@@ -14,6 +34,22 @@
                         font-weight: 600;
                         line-height: 55px;
                         margin-bottom: 25px;
+                        @include respond-to(xl){
+                            font-size: 44px;
+                        }
+                        @include respond-to(lg){
+                            font-size: 34px;
+                        }
+                        @include respond-to(md){
+                            font-size: 34px;
+                            line-height: 45px;
+                            margin-bottom: 15px;
+                            margin-top: 25px;
+                        }
+                        @include respond-to(sm){
+                            font-size: 30px;
+                            line-height: 35px;
+                        }
                     }
 
                     p {
@@ -23,29 +59,95 @@
                         line-height: 25px;
                         font-weight: 400;
                         margin-bottom: 50px;
+                        @include respond-to(xl){
+                            width: 500px;
+                        }
+                        @include respond-to(lg){
+                            width: 380px;
+                        }
+                        @include respond-to(md){
+                            width: 700px;
+                            margin-bottom: 15px;
+                        }
+                        @include respond-to(sm){
+                            width: 520px;
+                        }
+                        @include respond-to(xs){
+                            font-size: 14px;
+                            line-height: 20px;
+                            width: 290px;
+                        }
                     }
                 }
 
                 .items {
                     width: 590px;
+                    @include respond-to(xl){
+                        width: 500px;
+                    }
+                    @include respond-to(lg){
+                        width: 380px;
+                    }
+                    @include respond-to(md){
+                        width: 700px;
+                    }
+                    @include respond-to(sm){
+                        width: 520px;
+                    }
+                    @include respond-to(xs){
+                        width: 290px;
+                    }
                     h2 {
                         color: $black;
                         font-size: 24px;
                         line-height: 30px;
                         font-weight: 600;
                         margin-bottom: 20px;
+                        @include respond-to(lg){
+                            font-size: 20px;
+                        }
+                        @include respond-to(md){
+                            font-size: 30px;
+                        }
+                        @include respond-to(sm){
+                            font-size: 28px;
+                        }
+                        @include respond-to(xs){
+                            font-size: 18px;
+                            line-height: 25px;
+                        }
                     }
 
                     .item {
                         display: flex;
                         gap: 10px;
                         margin-bottom: 25px;
+                        @include respond-to(lg){
+                            gap: 5px;
+                            margin-bottom: 10px;
+                        }
+                        @include respond-to(md){
+                            gap: 10px;
+                            margin-bottom: 25px;
+                        }
 
                         span {
                             color: $black;
                             font-weight: 400;
                             font-size: 16px;
                             line-height: 25px;
+                            @include respond-to(lg){
+                               font-size: 14px;
+                                line-height: 16px;
+                            }
+                            @include respond-to(md){
+                                font-size: 16px;
+                                line-height: 25px;
+                            }
+                            @include respond-to(xs){
+                                font-size: 14px;
+                                line-height: 20px;
+                            }
                         }
                     }
                 }
@@ -64,9 +166,39 @@
             border-radius: 20px;
             display: flex;
             margin-top: 35px;
+            @include respond-to(xl){
+                width: 1115px;
+            }
+            @include respond-to(lg){
+                width: 935px;
+            }
+            @include respond-to(md){
+                display: block;
+                width: 700px;
+                height: 500px;
+            }
+            @include respond-to(sm){
+                width: 515px;
+            }
+            @include respond-to(xs){
+                width: 295px;
+                height: 550px;
+            }
 
             .left {
                 padding: 45px 50px 45px 50px;
+                @include respond-to(xl){
+                    padding: 45px 20px 45px 50px;
+                }
+                @include respond-to(md){
+                    padding: 45px 0 35px 150px;
+                }
+                @include respond-to(sm){
+                    padding: 45px 0 35px 60px;
+                }
+                @include respond-to(xs){
+                    padding: 45px 0 15px 25px;
+                }
 
                 h2 {
                     font-size: 32px;
@@ -76,6 +208,15 @@
                     width: 435px;
                     line-height: 35px;
                     margin-bottom: 20px;
+                    @include respond-to(lg){
+                        font-size: 25px;
+                        width: 400px;
+                    }
+                    @include respond-to(xs){
+                        font-size: 24px;
+                        line-height: 30px;
+                        width: 290px;
+                    }
                 }
 
                 p {
@@ -85,22 +226,70 @@
                     line-height: 25px;
                     width: 503px;
                     margin-bottom: 15px;
+                    @include respond-to(lg){
+                        font-size: 14px;
+                        width: 300px;
+                    }
+                    @include respond-to(md){
+                        width: 400px;
+                    }
+                    @include respond-to(xs){
+                        font-size: 14px;
+                        line-height: 20px;
+                        width: 250px;
+                    }
                 }
 
                 span {
                     color: #fff;
+                    font-weight: 500;
                     width: 510px;
+                    @include respond-to(lg){
+                        font-size: 14px;
+                        width: 200px;
+                    }
+
+                    @include respond-to(md){
+                        display: block;
+                        width: 400px;
+                    }
+                    @include respond-to(xs){
+                        font-size: 14px;
+                        line-height: 20px;
+                        width: 250px;
+                    }
+                }
+            }
+
+            .middle_vector{
+                @include respond-to(md){
+                    display: none;
                 }
             }
 
             .right {
                 padding: 50px 50px 50px 0;
                 margin-left: 56px;
+                @include respond-to(lg){
+                    margin-left: 36px;
+                }
+                @include respond-to(md){
+                    padding: 10px 90px 0 110px;
+                }
+                @include respond-to(sm){
+                    padding: 10px 0 0 24px;
+                }
+                @include respond-to(xs){
+                    padding: 0 0 0 15px;
+                    margin-left: 0;
+                }
 
                 .input_group {
                     display: flex;
                     gap: 20px;
-
+                    @include respond-to(xs){
+                        display: block;
+                    }
                     input {
                         background-color: rgba(255, 255, 255, 0.3);
                         color: #ffffff;
@@ -111,6 +300,17 @@
                         font-size: 16px;
                         line-height: 25px;
                         padding-left: 25px;
+                        @include respond-to(xl){
+                            width: 200px;
+                        }
+                        @include respond-to(lg){
+                            width: 190px;
+                        }
+                        @include respond-to(xs){
+                            width: 260px;
+                            height: 50px;
+                            margin-bottom: 10px;
+                        }
                     }
                 }
 
@@ -127,6 +327,18 @@
                     margin-top: 20px;
                     display: block;
                     margin-bottom: 20px;
+                    @include respond-to(xl){
+                        width: 419px;
+                    }
+                    @include respond-to(lg){
+                        width: 400px;
+                    }
+                    @include respond-to(xs){
+                        width: 260px;
+                        height: 50px;
+                        margin-top: 0;
+                        margin-bottom: 10px;
+                    }
                 }
 
                 p {
@@ -134,7 +346,15 @@
                     width: 440px;
                     font-weight: 500;
                     font-size: 14px;
-
+                    @include respond-to(lg){
+                        width: 400px;
+                    }
+                    @include respond-to(md){
+                        margin: auto;
+                    }
+                    @include respond-to(xs){
+                       width: 260px;
+                    }
                     a {
                         color: rgba(255, 255, 255, 0.55);
                         font-weight: 500;
