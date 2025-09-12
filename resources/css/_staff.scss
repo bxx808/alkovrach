@@ -70,7 +70,7 @@
                         transform: translateY(460px) translateX(-5px);
                     }
                     @include respond-to(xs){
-                        transform: translateY(380px) translateX(-5px);
+                        transform: translateY(350px) translateX(-5px);
                     }
                 }
 
@@ -81,7 +81,7 @@
                         transform: translateY(300px) translateX(300px);
                     }
                     @include respond-to(xs){
-                        transform: translateY(220px) translateX(300px);
+                        transform: translateY(190px) translateX(300px);
                     }
                 }
 
@@ -99,7 +99,7 @@
             .right {
                 display: flex;
                 @include respond-to(xs){
-                    height: 300px;
+                    height: 270px;
                 }
                 .people_img {
                     width: 360px;
@@ -119,7 +119,9 @@
                         transform: translateY(-300px) translateX(-15px);
                     }
                     @include respond-to(xs){
-                        transform: translateY(-350px) translateX(-15px);
+                        width: 290px;
+                        height: 350px;
+                        transform: translateY(-350px) translateX(-5px);
                     }
 
                 }
