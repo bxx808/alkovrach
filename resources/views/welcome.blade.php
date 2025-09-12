@@ -500,11 +500,11 @@
                     <div class="right">
                         <form>
                             <span>Задайте вопрос специалисту</span>
-                            <input placeholder="+7 999-999-99-99">
+                            <input placeholder="Ваше имя">
                             <textarea placeholder="Ваш вопрос"></textarea>
                             <button>Отправить</button>
                             <p>
-                                Нажимая кнопку «Получить консультацию», вы соглашаетесь с
+                                Нажимая кнопку «Отправить»,вы соглашаетесь с
                                 <a href="">политикой конфиденциальности</a>
                             </p>
                         </form>
@@ -559,7 +559,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
+                        <div class="item block">
                             <img class="marks" src="{{asset('images/icons/marks.png')}}" alt="">
                             <strong>АЛИНА</strong>
                             <p class="d_link">Добрый день! В клинику обращались по поводу вывода из запоя, хочу выразить
