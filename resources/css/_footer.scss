@@ -4,6 +4,10 @@
         text-align: center;
         height: 190px;
         padding-top: 30px;
+        @include respond-to(xs) {
+            height: 230px;
+        }
+
 
         p {
             color: #FFFFFF8C;
@@ -11,6 +15,18 @@
             font-weight: 400;
             font-size: 14px;
             line-height: 20px;
+            @include respond-to(md) {
+               font-size: 12px;
+                line-height: 15px;
+            }
+            @include respond-to(sm) {
+                width: 500px;
+                margin: auto;
+            }
+            @include respond-to(xs) {
+                width: 300px;
+                margin: auto;
+            }
         }
     }
 
@@ -18,11 +34,25 @@
         background-color: $night-black;
         height: 40px;
         padding: 10px 0;
+        @include respond-to(xs) {
+            height: 50px;
+        }
 
         p {
             color: #fff;
             display: flex;
             justify-content: center;
+            @include respond-to(md) {
+                font-size: 13px;
+                line-height: 15px;
+            }
+            @include respond-to(xs) {
+                font-size: 12px;
+                line-height: 15px;
+                width: 252px;
+                margin-left: 35px;
+                text-align: center;
+            }
         }
     }
 }
