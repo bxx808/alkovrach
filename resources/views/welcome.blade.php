@@ -598,6 +598,7 @@
                 </div>
             </div>
         </div>
+        <div class="bottom_line"></div>
     </div>
     <div class="footer">
         <div class="top">

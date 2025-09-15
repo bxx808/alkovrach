@@ -1,18 +1,44 @@
 .gnawing {
     background: linear-gradient(91.75deg, #0095F1 0%, #0DA3FF 103.58%, #0DA3FF 103.58%);
     height: 475px;
+    @include respond-to(md) {
+        height: 900px;
+        position: relative;
+    }
+    @include respond-to(xs) {
+        height: 755px;
+        position: relative;
+    }
 
     .container {
         padding-top: 100px;
+        @include respond-to(md) {
+            padding-top: 70px;
+        }
+
         .gnawing_content {
             display: flex;
             position: relative;
+
             .left {
+                @include respond-to(md) {
+                    padding: 0 0 0 90px;
+                }
+                @include respond-to(sm) {
+                    padding: 0 0 0 10px;
+                }
+                @include respond-to(xs) {
+                    padding: 0;
+                }
                 h1 {
                     font-weight: 600;
                     font-size: 52px;
                     line-height: 55px;
                     color: #fff;
+                    @include respond-to(xs) {
+                        font-size: 30px;
+                        line-height: 35px;
+                    }
                 }
 
                 p {
@@ -21,11 +47,22 @@
                     line-height: 30px;
                     color: #fff;
                     margin-top: 20px;
+                    @include respond-to(md) {
+                        width: 500px;
+                    }
+                    @include respond-to(xs) {
+                        font-size: 16px;
+                        line-height: 25px;
+                        width: 300px;
+                    }
                 }
 
                 .input_group {
                     display: flex;
                     gap: 20px;
+                    @include respond-to(xs) {
+                        display: block;
+                    }
 
                     input {
                         margin-top: 40px;
@@ -38,12 +75,24 @@
                         font-weight: 400;
                         font-size: 16px;
                         line-height: 25px;
+                        @include respond-to(lg) {
+                           width: 236px;
+                        }
+                        @include respond-to(xs) {
+                            width: 300px;
+                            height: 50px;
+                            margin-top: 15px;
+                        }
                     }
                 }
 
                 .button_group {
                     display: flex;
                     gap: 20px;
+                    @include respond-to(xs) {
+                        display: block;
+                    }
+
                     button {
                         width: 336px;
                         height: 55px;
@@ -55,6 +104,15 @@
                         font-size: 16px;
                         line-height: 25px;
                         margin-top: 20px;
+                        @include respond-to(lg) {
+                            width: 236px;
+                        }
+                        @include respond-to(xs) {
+                            width: 300px;
+                            height: 50px;
+                            margin-top: 15px;
+                            margin-bottom: 15px;
+                        }
                     }
 
                     span {
@@ -63,18 +121,68 @@
                         color: #FFFFFF8C;
                         line-height: 20px;
                         margin-top: 30px;
-                        a{
+                        @include respond-to(lg) {
+                            font-size: 11px;
+                        }
+                        @include respond-to(sm) {
+                            font-size: 11px;
+                            width: 300px;
+                        }
+                        @include respond-to(xs) {
+                            font-size: 12px;
+                            margin-top: 0;
+                        }
+
+                        a {
                             color: #FFFFFF8C;
                         }
                     }
                 }
             }
-            .right{
+
+            .right {
                 position: absolute;
                 top: -44.5%;
                 right: 7%;
+                @include respond-to(xl) {
+                    top: -45%;
+                    right: -10px;
+                }
+                @include respond-to(lg) {
+                    top: -44.7%;
+                }
+                @include respond-to(md) {
+                    top: 101%;
+                    right: 130px;
+                }
+                @include respond-to(sm) {
+                    top: 101.5%;
+                    right: 50px;
+                }
+                @include respond-to(xs) {
+                    top: 104.5%;
+                    right: 20px;
+                }
+                img{
+                    @include respond-to(xs) {
+                        width: 251px;
+                        height: 290px;
+                    }
+                }
             }
-
+        }
+    }
+    .bottom_line{
+        overflow: hidden;
+        @include respond-to(md) {
+            height: 130px;
+            background-color: #0084D6;
+            margin-top: 239px;
+        }
+        @include respond-to(xs) {
+             height: 130px;
+             background-color: #0084D6;
+             margin-top: 106px;
         }
     }
 }
