@@ -24,29 +24,29 @@
                         <p>Работаем 24/7</p>
                     </div>
                     <div class="btn">
-                        <button id="orderCallBtn">Заказать звонок</button>
-
-                        <div id="modal" class="modal" style="display: none;">
-                            <div class="modal-content">
-                                <span class="close-btn" id="closeModal">&times;</span>
-                                <h2>Заказать звонок</h2>
-                                <p>Просто оставьте заявку и мы вам перезвоним в ближайшее время</p>
-                                <form action="">
-                                    <div class="input_group">
-                                        <input placeholder="Ваше имя">
-                                        <input placeholder="+7 999-999-99-99">
-                                    </div>
-                                    <div class="button_group">
-                                        <button>Отправить</button>
-                                        <span> Нажимая кнопку «Получить консультацию», вы <br>
-                                    соглашаетесь с <a href="">политикой конфиденциальности</a>
-                                     </span>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+                        <button class="orderCallBtn">Заказать звонок</button>
                     </div>
                 </section>
+                <div id="modal" class="modal" style="display: none;">
+                    <div class="modal-content">
+                        <span class="close-btn" id="closeModal">&times;</span>
+                        <h2>Заказать звонок</h2>
+                        <p>Просто оставьте заявку и мы вам перезвоним в ближайшее время</p>
+                        <form action="">
+                            <div class="input_group">
+                                <input placeholder="Ваше имя">
+                                <input placeholder="+7 999-999-99-99">
+                            </div>
+                            <div class="button_group">
+                                <button>Отправить</button>
+                                <span> Нажимая кнопку «Отправить», вы <br>
+                                    соглашаетесь с
+                                    <a href="">политикой конфиденциальности</a>
+                                     </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
 
                 <nav class="navbar">
                     <div class="burger-container" id="burger-btn">
@@ -74,7 +74,7 @@
                                 <p>Работаем 24/7</p>
                             </div>
                             <div class="btn">
-                                <button id="orderCallBtn">Заказать звонок</button>
+                                <button class="orderCallBtn">Заказать звонок</button>
                             </div>
                         </section>
                     </div>
@@ -108,7 +108,7 @@
                             <button>Получить помощь</button>
                         </div>
                         <div class="btn_call">
-                            <button>Заказать звонок</button>
+                            <button class="orderCallBtn">Заказать звонок</button>
                         </div>
                     </div>
                 </div>
@@ -563,7 +563,7 @@
                                 период.</p>
                             <a href="#" class="read-more">Читать полностью</a>
                             <img class="vector" src="{{asset('images/card/vector_reviews.png')}}" alt="">
-                            <span>28.04.2023</span>
+                            <span class="date">28.04.2023</span>
                         </div>
 
                         <div id="modal_link" class="modal">
@@ -583,7 +583,7 @@
                                         компанией
                                         таких же неприятных ребят, бросил работу.</strong>
                                     <img class="vector" src="{{asset('images/card/vector_reviews.png')}}" alt="">
-                                    <span>28.04.2023</span>
+                                    <span class="date">28.04.2023</span>
                                 </div>
                             </div>
                         </div>
@@ -595,7 +595,7 @@
                                 благодарность Михаилу и Артуру за профессиональный подход и поддержку, спасибо вам за
                                 помощь.</p>
                             <img class="vector" src="{{asset('images/card/vector_reviews.png')}}" alt="">
-                            <span>28.04.2023</span>
+                            <span class="date">28.04.2023</span>
                         </div>
                     </div>
                 </div>
