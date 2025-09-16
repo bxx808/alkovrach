@@ -2,54 +2,82 @@
 
 @section('content')
     <div class="head">
-        <div class="head_banner">
-            <p>Имеются противопоказания, необходимо проконсультироваться со специалистом 18+</p>
-        </div>
-        <div class="head_nav">
-            <div class="logo">
-                <img src="{{asset('images/logo/group.png')}}" alt="">
+        <div class="nav_content">
+            <div class="head_banner">
+                <p>Имеются противопоказания, необходимо проконсультироваться со специалистом 18+</p>
             </div>
-            <div class="link">
-                <a href="">Услуги</a>
-                <a href="">Этапы лечения</a>
-                <a href="">О нас</a>
-                <a href="">Отзывы</a>
-                <a href="">Контакты</a>
-            </div>
-
-            <section>
-                <div class="num">
-                    <strong>8 (906) 180-00-41</strong>
-                    <p>Работаем 24/7</p>
+            <div class="head_nav">
+                <div class="logo">
+                    <img src="{{asset('images/logo/group.png')}}" alt="">
                 </div>
-                <div class="btn">
-                    <button id="orderCallBtn">Заказать звонок</button>
+                <div class="link">
+                    <a href="">Услуги</a>
+                    <a href="">Этапы лечения</a>
+                    <a href="">О нас</a>
+                    <a href="">Отзывы</a>
+                    <a href="">Контакты</a>
+                </div>
 
-                    <div id="modal" class="modal" style="display: none;">
-                        <div class="modal-content">
-                            <span class="close-btn" id="closeModal">&times;</span>
-                            <h2>Заказать звонок</h2>
-                            <p>Просто оставьте заявку и мы вам перезвоним в ближайшее время</p>
-                            <form action="">
-                                <div class="input_group">
-                                    <input placeholder="Ваше имя">
-                                    <input placeholder="+7 999-999-99-99">
-                                </div>
-                                <div class="button_group">
-                                    <button>Отправить</button>
-                                    <span> Нажимая кнопку «Получить консультацию», вы <br>
+                <section>
+                    <div class="num">
+                        <strong>8 (906) 180-00-41</strong>
+                        <p>Работаем 24/7</p>
+                    </div>
+                    <div class="btn">
+                        <button id="orderCallBtn">Заказать звонок</button>
+
+                        <div id="modal" class="modal" style="display: none;">
+                            <div class="modal-content">
+                                <span class="close-btn" id="closeModal">&times;</span>
+                                <h2>Заказать звонок</h2>
+                                <p>Просто оставьте заявку и мы вам перезвоним в ближайшее время</p>
+                                <form action="">
+                                    <div class="input_group">
+                                        <input placeholder="Ваше имя">
+                                        <input placeholder="+7 999-999-99-99">
+                                    </div>
+                                    <div class="button_group">
+                                        <button>Отправить</button>
+                                        <span> Нажимая кнопку «Получить консультацию», вы <br>
                                     соглашаетесь с <a href="">политикой конфиденциальности</a>
                                      </span>
-                                </div>
-                            </form>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+
+                <nav class="navbar">
+                    <div class="burger-container" id="burger-btn">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </nav>
+            </div>
         </div>
         <div class="head_content">
             <div class="left_section">
                 <div class="container">
+                    <div class="burger-menu" id="burger-menu">
+                        <div class="burger_link">
+                            <a href="#">Услуги</a>
+                            <a href="#">Этапы лечения</a>
+                            <a href="#">О нас</a>
+                            <a href="#">Отзывы</a>
+                            <a href="#">Контакты</a>
+                        </div>
+                        <section>
+                            <div class="num">
+                                <strong>8 (906) 180-00-41</strong>
+                                <p>Работаем 24/7</p>
+                            </div>
+                            <div class="btn">
+                                <button id="orderCallBtn">Заказать звонок</button>
+                            </div>
+                        </section>
+                    </div>
                     <div class="top">
                         <h1>
                             Срочный вызов врача-нарколога

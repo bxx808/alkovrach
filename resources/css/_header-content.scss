@@ -1,93 +1,107 @@
-.head_banner{
+.head_banner {
     background-color: $light-blue;
-    p{
+
+    p {
         color: #577F9C;
         font-size: 16px;
         font-weight: 400;
         padding: 15px 0;
         text-align: center;
-        @include respond-to(xs){
+        margin: 0;
+        @include respond-to(xs) {
             font-size: 13px;
         }
     }
 }
-.head_nav{
+
+.head_nav {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 90px;
-    padding-bottom:10px ;
     margin-left: auto;
     margin-right: auto;
-    width: max-content;
-    @include respond-to(xl){
-        gap: 60px;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0 10px 40px;
+    @include respond-to(xl) {
+        gap: 40px;
     }
-    @include respond-to(lg){
+    @include respond-to(lg) {
         gap: 20px;
     }
-    @include respond-to(xs){
+    @include respond-to(md) {
+        padding: 10px 0;
+    }
+    @include respond-to(xs) {
         gap: 10px;
     }
-    .logo{
-        img{
-            @include respond-to(xs){
+
+    .logo {
+        img {
+            @include respond-to(xs) {
                 width: 119px;
                 height: 35px;
             }
         }
     }
 
-    .link{
+    .link {
         display: flex;
         gap: 30px;
 
-        a{
+        a {
             color: $black;
             font-size: 16px;
             font-weight: 400;
             line-height: 25px;
             transition: color 0.2s ease;
             text-decoration: none;
-            &:hover{
+
+            &:hover {
                 color: $blue;
             }
-            @include respond-to(lg){
+
+            @include respond-to(lg) {
                 display: none;
             }
         }
     }
 
-    section{
+    section {
         display: flex;
         gap: 30px;
 
-        .num{
+        .num {
             margin-top: 10px;
-            strong{
+
+            strong {
                 font-weight: 600;
                 font-size: 18px;
                 line-height: 25px;
                 color: $blue;
-                @include respond-to(xs){
+                @include respond-to(xs) {
                     font-size: 13px;
                     line-height: 20px;
                 }
             }
-            p{
+
+            p {
                 font-weight: 400;
                 color: rgba(red($black), green($black), blue($black), 0.5);
-                @include respond-to(xs){
+                @include respond-to(xs) {
                     font-size: 11px;
                     line-height: 12px;
                 }
             }
         }
 
-        .btn{
-            @include respond-to(lg){
+        .btn {
+            @include respond-to(lg) {
                 display: none;
             }
-            button{
+
+            button {
                 width: 183px;
                 height: 55px;
                 background-color: $blue;
@@ -97,7 +111,7 @@
                 line-height: 25px;
                 transition: color 0.2s ease;
                 cursor: pointer;
-                @include respond-to(xs){
+                @include respond-to(xs) {
                     font-size: 14px;
                     line-height: 20px;
                 }
@@ -110,7 +124,7 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                background-color: rgba(0,0,0,0.5);
+                background-color: rgba(0, 0, 0, 0.5);
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -123,7 +137,7 @@
                     width: 812px;
                     height: 375px;
 
-                    h2{
+                    h2 {
                         font-weight: 600;
                         font-size: 52px;
                         color: $black;
@@ -131,7 +145,8 @@
                         display: flex;
                         justify-content: flex-start;
                     }
-                    p{
+
+                    p {
                         font-weight: 400;
                         font-size: 20px;
                         color: $black;
@@ -202,95 +217,104 @@
 
     }
 }
-.head_content{
+
+.head_content {
     width: 100%;
     display: flex;
     position: relative;
-    @include respond-to(lg){
+    @include respond-to(lg) {
         display: block;
     }
-    .left_section{
+
+    .left_section {
         width: 67%;
         height: 720px;
         background-color: #F1F8FD;
-        @include respond-to(xl){
+        @include respond-to(xl) {
             width: 75.5%;
         }
-        @include respond-to(lg){
+        @include respond-to(lg) {
             width: 100%;
         }
-        @include respond-to(xs){
+        @include respond-to(xs) {
             height: 620px;
         }
-        .container{
+
+        .container {
             padding: 140px 0 0 360px;
-            @include respond-to(xxl){
+            @include respond-to(xxl) {
                 padding: 140px 0 0 150px;
             }
-            @include respond-to(xl){
+            @include respond-to(xl) {
                 padding: 140px 0 0 100px;
             }
-            @include respond-to(lg){
+            @include respond-to(lg) {
                 padding: 60px 0 0 200px;
             }
-            @include respond-to(md){
+            @include respond-to(md) {
                 padding: 50px 0 0 65px;
             }
-            @include respond-to(sm){
+            @include respond-to(sm) {
                 padding: 30px 0 0 25px;
             }
-            @include respond-to(xs){
+            @include respond-to(xs) {
                 padding: 30px 0 0 20px;
             }
-            .top{
+
+            .top {
                 width: 530px;
                 margin-bottom: 25px;
-                h1{
+
+                h1 {
                     font-size: 52px;
                     font-weight: 600;
                     color: $black;
-                    @include respond-to(sm){
+                    @include respond-to(sm) {
                         font-size: 44px;
                         line-height: 40px;
                     }
-                    @include respond-to(xs){
+                    @include respond-to(xs) {
                         font-size: 34px;
                         line-height: 40px;
                     }
                 }
-                @include respond-to(lg){
+
+                @include respond-to(lg) {
                     width: 630px;
                 }
-                @include respond-to(xs){
+                @include respond-to(xs) {
                     width: 300px;
                 }
             }
-            .middle{
-                .items{
-                    .item{
+
+            .middle {
+                .items {
+                    .item {
                         margin-top: 15px;
                         display: flex;
                         gap: 10px;
-                        @include respond-to(xs){
+                        @include respond-to(xs) {
                             margin-top: 3px;
                         }
-                        img{
+
+                        img {
                             width: 25px;
                             height: 25px;
-                            @include respond-to(xs){
+                            @include respond-to(xs) {
                                 width: 20px;
                                 height: 20px;
                             }
                         }
-                        p{
+
+                        p {
                             color: $black;
                             font-size: 18px;
                             font-weight: 400;
-                            @include respond-to(sm){
+                            @include respond-to(sm) {
                                 line-height: 20px;
                                 width: 474px;
                             }
-                            @include respond-to(xs){
+                            @include respond-to(xs) {
                                 font-size: 14px;
                                 line-height: 20px;
                                 width: 254px;
@@ -299,48 +323,53 @@
                     }
                 }
             }
-            .bottom{
+
+            .bottom {
                 margin-top: 70px;
                 display: flex;
                 gap: 20px;
-                button{
+
+                button {
                     width: 206px;
                     height: 55px;
                     border-radius: 32px;
                     cursor: pointer;
                     transition: 0.2s;
-                    @include respond-to(lg){
+                    @include respond-to(lg) {
                         width: 585px;
                         margin-bottom: 15px;
                     }
-                    @include respond-to(sm){
+                    @include respond-to(sm) {
                         width: 480px;
                     }
-                    @include respond-to(xs){
+                    @include respond-to(xs) {
                         width: 280px;
                     }
                 }
-                @include respond-to(lg){
+
+                @include respond-to(lg) {
                     display: block;
                     margin-top: 20px;
                 }
 
-                .btn_help{
-                    button{
+                .btn_help {
+                    button {
                         background-color: $blue;
                         color: #fff;
-                        &:hover{
+
+                        &:hover {
                             color: $blue;
                             background-color: $light-blue;
                         }
                     }
                 }
 
-                .btn_call{
-                    button{
+                .btn_call {
+                    button {
                         background-color: $light-blue;
                         color: $black;
-                        &:hover{
+
+                        &:hover {
                             color: #fff;
                             background-color: $blue;
                         }
@@ -349,58 +378,62 @@
             }
         }
     }
-    .right_section{
+
+    .right_section {
         width: 33%;
         height: 720px;
         background-image: url("/public/images/icons/bg.png");
         background-repeat: no-repeat;
-        @include respond-to(xl){
+        @include respond-to(xl) {
             width: 24.5%;
         }
-        @include respond-to(lg){
+        @include respond-to(lg) {
             width: 100%;
             height: 535px;
             background-size: cover;
         }
-        @include respond-to(sm){
+        @include respond-to(sm) {
             height: 420px;
         }
-        @include respond-to(xs){
+        @include respond-to(xs) {
             height: 260px;
         }
     }
-    .doctor{
+
+    .doctor {
         position: absolute;
         bottom: 0.5px;
         right: 20%;
         max-width: 100%;
         height: auto;
-        img{
-            @include respond-to(sm){
+
+        img {
+            @include respond-to(sm) {
                 width: 425px;
             }
-            @include respond-to(xs){
+            @include respond-to(xs) {
                 width: 256px;
             }
         }
-        @include respond-to(xxl){
+
+        @include respond-to(xxl) {
             right: 15%;
         }
-        @include respond-to(xl){
+        @include respond-to(xl) {
             right: 4%;
         }
-        @include respond-to(lg){
+        @include respond-to(lg) {
             right: 25%;
             bottom: -0.5px;
         }
-        @include respond-to(md){
+        @include respond-to(md) {
             right: 19%;
         }
-        @include respond-to(sm){
+        @include respond-to(sm) {
             right: 12%;
             bottom: 1px;
         }
-        @include respond-to(xs){
+        @include respond-to(xs) {
             right: 10%;
             bottom: -0.5px;
         }

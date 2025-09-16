@@ -1,0 +1,158 @@
+.burger-container {
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px;
+
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 4px;
+        background-color: $button-blue;
+        margin: 6px 0;
+        transition: 0.4s;
+        border-radius: 2px;
+        display: none;
+
+        @include respond-to(lg) {
+            display: flex;
+        }
+
+        @include respond-to(xs) {
+            width: 26px;
+            height: 3px;
+        }
+    }
+
+    &.change {
+        .bar1 {
+            transform: translate(0, 10px) rotate(-45deg);
+            @include respond-to(xs) {
+                transform: translate(0, 10px) rotate(-45deg);
+            }
+        }
+
+        .bar2 {
+            opacity: 0;
+        }
+
+        .bar3 {
+            transform: translate(0, -10px) rotate(45deg);
+            @include respond-to(xs) {
+                transform: translate(0, -8px) rotate(45deg);
+            }
+        }
+    }
+}
+
+.nav_content {
+    position: relative;
+    z-index: 101;
+}
+
+.burger-menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background-color: $white-blue;
+    transition: top 0.5s ease;
+    display: none;
+    flex-direction: column;
+    z-index: 99;
+
+    @include respond-to(lg) {
+        display: flex;
+    }
+
+    @include respond-to(xs) {
+        height: 510px;
+    }
+
+    .burger_link {
+        margin: 40px 0 0 40px;
+
+        @include respond-to(xs) {
+            margin: 40px 0 0 20px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 30px;
+            display: block;
+            margin-bottom: 15px;
+            transition: 0.3s;
+            color: $black;
+
+            @include respond-to(xs) {
+                font-size: 16px;
+                line-height: 25px;
+            }
+
+            &:hover {
+                color: $black;
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    section {
+        .num {
+            margin: 340px 0 0 40px;
+
+            @include respond-to(xs) {
+                margin: 140px 0 0 20px;
+            }
+
+            strong {
+                color: $button-blue;
+                font-size: 30px;
+
+                @include respond-to(xs) {
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+            }
+
+            p {
+                color: #3838388C;
+                font-size: 24px;
+
+                @include respond-to(xs) {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        .btn {
+            margin-left: 25px;
+
+            @include respond-to(xs) {
+                margin-left: 10px;
+                padding: 0;
+            }
+
+            button {
+                width: 250px;
+                height: 55px;
+                background-color: $blue;
+                border-radius: 32px;
+                color: #fff;
+                font-size: 20px;
+                line-height: 25px;
+                transition: color 0.2s ease;
+                cursor: pointer;
+
+                @include respond-to(xs) {
+                    width: 300px;
+                    height: 50px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    &.active {
+        top: 10%;
+    }
+}
