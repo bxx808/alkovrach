@@ -1,7 +1,27 @@
 @extends('layout')
 
 @section('content')
+    @yield('content')
     <div class="head">
+        <div id="flash-container" class="position-fixed top-0 end-0 p-3" style="z-index: 9999;">
+            @if(session('success'))
+                <div class="alert alert-success">{{session('success')}}</div>
+            @endif
+            @if(session('error'))
+                <div class="alert alert-danger">{{session('error')}}</div>
+            @endif
+            @error('name')
+            <div class="alert alert-danger">
+                {{$message}}
+            </div>
+            @enderror
+            @error('phone')
+            <div class="alert alert-danger">
+                {{$message}}
+            </div>
+            @enderror
+        </div>
+        @yield('content')
         <div class="nav_content">
             <div class="head_banner">
                 <p>Имеются противопоказания, необходимо проконсультироваться со специалистом 18+</p>
@@ -32,13 +52,14 @@
                         <span class="close-btn" id="closeModal">&times;</span>
                         <h2>Заказать звонок</h2>
                         <p>Просто оставьте заявку и мы вам перезвоним в ближайшее время</p>
-                        <form action="">
+                        <form action="{{route('contact.store')}}" method="post">
+                            @csrf
                             <div class="input_group">
-                                <input placeholder="Ваше имя">
-                                <input placeholder="+7 999-999-99-99">
+                                <input name="name" value="{{old('name')}}" placeholder="Ваше имя">
+                                <input name="phone" value="{{old('phone')}}" placeholder="+7 999-999-99-99">
                             </div>
                             <div class="button_group">
-                                <button>Отправить</button>
+                                <button type="submit">Отправить</button>
                                 <span> Нажимая кнопку «Отправить», вы <br>
                                     соглашаетесь с
                                     <a href="">политикой конфиденциальности</a>
@@ -437,11 +458,14 @@
                         <img src="{{asset('images/icons/vector_v.png')}}" alt="">
                     </div>
                     <div class="right">
-                        <div class="input_group">
-                            <input placeholder="Ваше имя">
-                            <input placeholder="+7 999-999-99-99">
-                        </div>
-                        <button>Получить консультацию</button>
+                        <form method="post" action="{{route('contact.store')}}">
+                            @csrf
+                            <div class="input_group">
+                                <input name="name" value="{{old('name')}}" placeholder="Ваше имя">
+                                <input name="phone" value="{{old('phone')}}" placeholder="+7 999-999-99-99">
+                            </div>
+                            <button type="submit">Получить консультацию</button>
+                        </form>
                         <p>
                             Нажимая кнопку «Получить консультацию», вы соглашаетесь с
                             <a href="">политикой конфиденциальности</a>
@@ -606,20 +630,23 @@
         <div class="container">
             <div class="gnawing_content">
                 <div class="left">
-                    <h1>Остались вопросы?</h1>
-                    <p>Просто оставьте заявку и мы вам перезвоним в ближайшее время</p>
-                    <div class="input_group">
-                        <input placeholder="Ваше имя">
-                        <input placeholder="+7 999-999-99-99">
-                    </div>
-                    <div class="button_group">
-                        <button>Получить консультацию</button>
-                        <span>
+                    <form action="{{route('contact.store')}}" method="post">
+                        @csrf
+                        <h1>Остались вопросы?</h1>
+                        <p>Просто оставьте заявку и мы вам перезвоним в ближайшее время</p>
+                        <div class="input_group">
+                            <input name="name" value="{{old('name')}}" placeholder="Ваше имя">
+                            <input name="phone" value="{{old('phone')}}" placeholder="+7 999-999-99-99">
+                        </div>
+                        <div class="button_group">
+                            <button type="submit">Получить консультацию</button>
+                            <span>
                         Нажимая кнопку «Получить консультацию», вы <br>
                             соглашаетесь с
                         <a href="">политикой конфиденциальности</a>
                         </span>
-                    </div>
+                        </div>
+                    </form>
                 </div>
                 <div class="right">
                     <img src="{{asset('images/people/gnawing_p.png')}}" alt="">
